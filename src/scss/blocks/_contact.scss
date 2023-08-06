@@ -1,6 +1,5 @@
 .contact {
-    min-height: 700px;
-    padding: 120px 0 50px 0;
+    margin: 120px 0 50px 0;
     &__title {
         position: relative;
         padding-left: 12px;
@@ -18,34 +17,33 @@
         position: relative;
         margin: 0 auto;
         margin-top: 20px;
-        height: 250px;
-        max-width: 900px;
+        height: 160px;
+        max-width: 600px;
     }
     &__link {
         position: absolute;
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        height: 60px;
         margin-right: 25px;
         display: block;
         margin: 0 auto;
         transition: 0.5s all;
         &:first-child {
             top: 0;
-            left: -5%;
+            left: 0%;
         }
         &:nth-child(2) {
-            top: 33%;
-            left: 28%;
+            top: calc(33% - 20px);
+            left: 30%;
         }
         &:nth-child(3) {
-            top: 66%;
-            left: 61%;
+            top: calc(66% - 40px);
+            right: 30%;
         }
         &:nth-child(4) {
-            top: 100%;
-            left: 95%;
+            top: calc(100% - 60px);
+            right: 0;
         }
-
         svg {
             display: block;
             width: 100%;
