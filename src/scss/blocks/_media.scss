@@ -26,38 +26,11 @@
             }
         }
     }
-    .scale {
-        &__wrapper {
-            grid-template-columns: repeat(auto-fit, 350px);
-            grid-auto-rows: 58px;
-            justify-content: space-around;
-        }
-    }
     .portfolio {
-        &__wrapper {
-            grid-template-columns: repeat(auto-fit, 280px);
-            grid-auto-rows: 280px;
-            justify-content: space-around;
-            row-gap: 20px;
-            .horizontal, .vertical {
-                grid-row: unset;
-                grid-column: unset;
-            }
-        }
         &__item {
-            &:nth-child(7) {
-                grid-column: unset;
+            &-box {
+                height: 265px;
             }
-        }
-    }
-    .benefit {
-        &__wrapper {
-            column-gap: 70px;
-        }
-    }
-    .contact {
-        &__social {
-            max-width: 800px;
         }
     }
 }
@@ -66,9 +39,9 @@
     .container {
         max-width: 720px;
     }
-    .title {
-        &__section-subtitle {
-            font-size: 30px;
+    .promo {
+        &__wrapper {
+            margin: 0 auto;
         }
     }
     .about {
@@ -84,50 +57,12 @@
             }
         }
     }
-    .benefit {
-        &__wrapper {
-            padding: 40px 10px 0;
-            grid-template-columns: 400px;
-        }
-    }
-    .skills {
-        &__wrapper {
-            padding-top: 40px;
-        }
-    }
-    .scale {
-        padding-top: 80px;
-        &__wrapper {
-            row-gap: 48px;
-        }
-    }
     .portfolio {
-        padding-top: 90px;
-        &__wrapper {
-            padding-top: 40px;
-        }
-    }
-    .price {
-        padding-top: 80px;
-        &__wrapper {
-            padding-top: 20px;
-            grid-template-columns: repeat(auto-fit, 350px);
-            justify-content: center;
-        }
         &__item {
-            margin-bottom: 20px;
-        }
-    }
-    .contact {
-        padding: 80px 0 50px;
-        min-height: 600px;
-        &__social {
-            max-width: 600px;
-            height: 200px;
-        }
-        &__link {
-            width: 80px;
-            height: 80px;
+            flex-direction: column;
+            &:nth-child(2), &:nth-child(4) {
+                flex-direction: column;
+            } 
         }
     }
 }
@@ -137,14 +72,9 @@
         max-width: 540px;
     }
     .title {
-        &_fs48 {
+        &_fs40 {    
             font-size: 30px;
-        }
-    }
-    .promo {
-        &__title {
             line-height: 38px;
-            width: 362px;
         }
     }
     .about {
@@ -167,53 +97,22 @@
             }
         }
     }
-    .benefit {
-        margin-top: 80px;
-        &__wrapper {
-            padding-top: 0;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-        }
-        &__column {
-            padding-top: 40px;
-        }
-        &__item {
-            &_pt10 {
-                &:before {
-                    content: '';
-                    top: 28px;
-                }
-            }
-            &-head {
-                &_pt10 {
-                    padding-top: 10px;
-                }
-            }
-            &-icon {
-                &_pt10 {
-                    top: 10px;
-                }
-            }
-        }
-    }
     .contact {
         &__social {
-            max-width: 420px;
+            height: 130px;
+            max-width: 400px;
         }
         &__link {
-            width: 60px;
-            height: 60px;
-            &:first-child {
-                left: -10%;
-            }
+            width: 40px;
+            height: 40px;
             &:nth-child(2) {
-                left: 23%;
+                top: calc(33% - 15px);
             }
             &:nth-child(3) {
-                left: 56%;
+                top: calc(66% - 25px);
             }
             &:nth-child(4) {
-                left: 90%;
+                top: calc(100% - 40px);
             }
         }
     }
@@ -227,20 +126,21 @@
     .hamburger {
         right: 20px;
     }
-    .title {
-        &__section-subtitle {
-            margin-top: 26px;
-            font-size: 24px;
-            line-height: 36px;
-        }
-    }
     .promo {
-        background: url('../img/bg_promo.jpg') no-repeat 40%/cover;
-        &__title {
-            width: 300px;
+        background: url('../img/promo.jpg') no-repeat 40%/cover;
+        &__wrapper {
+            padding: 20px 10px;
         }
         &__btns {
             margin-top: 30px;
+        }
+        &__tech {
+            &-item {
+                height: 25px;
+            }
+            &-list {
+                gap: 10px;
+            }
         }
     }
     .menu {
@@ -266,49 +166,30 @@
         &__experience {
             grid-template-columns: 1fr;
         }
-        &__name {
-            .divider {
-                margin-top: 15px;
-            }
-        }
-    }
-    .skills {
-        &__item {
-            &-descr {
-                margin-top: 16px;
-            }
-        }
-    }
-    .scale {
-        &__wrapper {
-            grid-template-columns: repeat(auto-fit, 285px);
-        }
-        &__item {
-            &-progress {
-                width: 285px;
-            }
-        }
-    }
-    .price {
-        padding: 60px 0 0;
-        &__wrapper {
-            padding: 20px 0 0 27px;
-            grid-template-columns: repeat(auto-fit, 270px);
-        }
-       
     }
     .contact {
-        min-height: 530px;
-        .divider {
-            margin-top: 15px;
-        }
         &__social {
-            max-width: 220px;
+            max-width: 250px;
             margin-top: 30px;
         }
         &__link {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
+            &:nth-child(4) {
+                top: calc(100% - 30px);
+            }
+        }
+
+    }
+    .portfolio {
+        &__item {
+            &-box {
+                width: 100%;
+                height: auto;
+            }
+            &-img {
+                width: inherit;
+            }
         }
     }
 }
