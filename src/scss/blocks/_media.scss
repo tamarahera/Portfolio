@@ -114,6 +114,9 @@
             &:nth-child(4) {
                 top: calc(100% - 40px);
             }
+            svg:hover {
+                fill: #000;
+            }
         }
     }
 }
@@ -128,8 +131,11 @@
     }
     .promo {
         background: url('../img/promo.jpg') no-repeat 40%/cover;
+        &__subtitle {
+            font-size: 14px;
+        }
         &__wrapper {
-            padding: 20px 10px;
+            padding: 20px;
         }
         &__btns {
             margin-top: 30px;

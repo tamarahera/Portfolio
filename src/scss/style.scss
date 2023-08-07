@@ -8,27 +8,34 @@
     margin: 0;
     padding: 0;
 }
+body {
+    background-color: #f8f8f8;
+}
+
+ul, p {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
 
 .container {
     width: 1140px;
     margin: 0 auto;
 }
 .divider {
-    margin: 25px auto 0 auto;
-    width: 100px;
+    margin: 15px auto 0 auto;
+    width: 150px;
     height: 1px;
     background-color: $color-black;
 }
 
 @import 'blocks/promo';
 @import 'blocks/title';
-@import 'blocks/buttons';
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
-@import 'blocks/benefit';
-@import 'blocks/skills';
-@import 'blocks/scale';
 @import 'blocks/portfolio';
 @import 'blocks/contact';
 @import 'blocks/pageup';
